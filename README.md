@@ -4,8 +4,6 @@ FPGAボードからVGAの信号を出力して、ディスプレイにテトリ�
 
 FPGAボードのボタンでブロックを動かし、テトリス風のゲームを遊ぶ
 
-## 必要となるソースコードについて
-
 ## GitHub上のソースコードについて
 - `video/VGAtiming-do-well.v`: VGA信号を出力するためのファイル
 - `video/color-hi-res.v`: 画面の解像度を設定するためのファイル(VGAは640x480ピクセルだが、今回は縦40ピクセルx横30ピクセルを出力するようにしている。)
@@ -39,3 +37,12 @@ FPGAボードのボタンでブロックを動かし、テトリス風のゲー�
     - utils_1
         - Design Checkpoint
 			`VGAtimingSim.dcp`
+
+
+## 使用した機材など
+- FPGAボード (DIGILENT BASYS3 ARTIX-7)
+- ディスプレイ (VGAケーブル・D-Subに対応したもの)
+- VGAケーブル (オス-オス)
+- USB A - microBケーブル (mircoBをFPGAボードに挿す)
+- Vivado 2023.2
+- PC (Vivadoを動かすためのもの、Windows 11)
