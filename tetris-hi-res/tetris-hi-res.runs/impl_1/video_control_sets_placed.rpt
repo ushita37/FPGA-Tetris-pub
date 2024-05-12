@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Mon May 13 01:38:52 2024
+| Date         : Mon May 13 08:23:27 2024
 | Host         : ushita37 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file video_control_sets_placed.rpt
 | Design       : video
@@ -73,9 +73,9 @@ Table of Contents
 +--------------------+------------------------------+--------------------------+------------------+----------------+--------------+
 |    Clock Signal    |         Enable Signal        |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
 +--------------------+------------------------------+--------------------------+------------------+----------------+--------------+
+|  CLK100M_IBUF_BUFG |                              |                          |                1 |              2 |         2.00 |
 |  CLK25M_BUFG       | VGAtiming/hsync_i_2_n_0      | VGAtiming/hsync0         |                1 |              2 |         2.00 |
 |  CLK25M_BUFG       | VGAtiming/vsync_i_1_n_0      | SW_IBUF[15]              |                1 |              2 |         2.00 |
-|  CLK100M_IBUF_BUFG |                              |                          |                1 |              2 |         2.00 |
 |  CLK25M_BUFG       | color/chat1/Btnu_flag_reg[0] |                          |                2 |              4 |         2.00 |
 |  CLK25M_BUFG       | color/chat1/Btnu_flag_reg[0] | color/chat1/SW[14]_0     |                2 |              5 |         2.50 |
 |  CLK25M_BUFG       | color/chat1/buffer_0         |                          |                3 |              8 |         2.67 |

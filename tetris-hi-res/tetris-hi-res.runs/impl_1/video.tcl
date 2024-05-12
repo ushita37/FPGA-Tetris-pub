@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/tetris-hi-res/tetris-hi-res.runs/impl_1/video.tcl"
+  variable script "C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/tetris-hi-res/tetris-hi-res.runs/impl_1/video.tcl"
   variable category "vivado_impl"
 }
 
@@ -126,7 +126,7 @@ set rc [catch {
   set_param chipscope.maxJobs 6
   set_param runs.launchOptions { -jobs 24  }
   open_checkpoint video_routed.dcp
-  set_property webtalk.parent_dir C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/tetris-hi-res/tetris-hi-res.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/tetris-hi-res/tetris-hi-res.cache/wt [current_project]
 set_property TOP video [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

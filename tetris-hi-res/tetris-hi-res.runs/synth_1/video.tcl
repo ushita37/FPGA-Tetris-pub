@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/tetris-hi-res/tetris-hi-res.runs/synth_1/video.tcl"
+  variable script "C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/tetris-hi-res/tetris-hi-res.runs/synth_1/video.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,18 +76,18 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/tetris-hi-res/tetris-hi-res.cache/wt [current_project]
-set_property parent.project_path C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/tetris-hi-res/tetris-hi-res.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/tetris-hi-res/tetris-hi-res.cache/wt [current_project]
+set_property parent.project_path C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/tetris-hi-res/tetris-hi-res.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/tetris-hi-res/tetris-hi-res.cache/ip [current_project]
+set_property ip_output_repo c:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/tetris-hi-res/tetris-hi-res.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/video/VGAtiming-do-well.v
-  C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/video/color-hi-res.v
-  C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/video/video.v
+  C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/video/VGAtiming-do-well.v
+  C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/video/color-hi-res.v
+  C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/video/video.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -98,12 +98,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/video/basys3.xdc
-set_property used_in_implementation false [get_files C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/video/basys3.xdc]
+read_xdc C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/video/basys3.xdc
+set_property used_in_implementation false [get_files C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/video/basys3.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/tetris-hi-res/tetris-hi-res.srcs/utils_1/imports/synth_1/VGAtimingSim.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/tetris-hi-res/tetris-hi-res.srcs/utils_1/imports/synth_1/VGAtimingSim.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

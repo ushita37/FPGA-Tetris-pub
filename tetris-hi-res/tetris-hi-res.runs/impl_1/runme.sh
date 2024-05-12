@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ushit/iCloudDrive/Documents/UEC-B2/JK-lab/FPGA-Tetris/tetris-hi-res/tetris-hi-res.runs/impl_1'
+HD_PWD='C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/tetris-hi-res/tetris-hi-res.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
