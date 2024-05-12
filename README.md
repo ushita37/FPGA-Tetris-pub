@@ -9,6 +9,7 @@ FPGAボードのボタンでブロックを動かし、テトリス風のゲー�
 - `video/color-hi-res.v`: 画面の解像度を設定するためのファイル(VGAは640x480ピクセルだが、今回は縦40ピクセルx横30ピクセルを出力するようにしている。)
 - `video/video.v`: FPGAボードで用いるスイッチ、ボタンを指定するファイル
 - `video/basys3.xdc` : FPGA(DIGILENT BASYS3 ARTIX-7)の制約ファイル
+- `tetris-hi-res/tetris-hi-res.xpr` : Vivadoプロジェクトのファイル
 
 ## Vivadoでプロジェクトを作成するときのSourcesについて
 - Design Sources
