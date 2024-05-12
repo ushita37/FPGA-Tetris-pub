@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1715523210" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/VGAtimingSim.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1715556083" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/VGAtimingSim.dcp">
   <File Type="PA-TCL" Name="video.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="video_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="video_reports.tcl"/>
   <File Type="RDS-RDS" Name="video.vds"/>
   <File Type="RDS-UTIL" Name="video_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="video_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="video.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="video_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="video_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../video/VGAtiming-do-well.v">

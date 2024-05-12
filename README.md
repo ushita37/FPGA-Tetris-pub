@@ -8,8 +8,9 @@ FPGAボードのボタンでブロックを動かし、テトリス風のゲー�
 
 ## GitHub上のソースコードについて
 - `video/VGAtiming-do-well.v`: VGA信号を出力するためのファイル
-- `color-hi-res.v: 画面の解像度を設定するためのファイル(VGAは640x480ピクセルだが、今回は縦40ピクセルx横30ピクセルを出力するようにしている。)
-- `video.v`:FPGAボードで用いるスイッチ、ボタンを指定するファイル
+- `video/color-hi-res.v`: 画面の解像度を設定するためのファイル(VGAは640x480ピクセルだが、今回は縦40ピクセルx横30ピクセルを出力するようにしている。)
+- `video/video.v`: FPGAボードで用いるスイッチ、ボタンを指定するファイル
+- `video/basys3.xdc` : FPGA(DIGILENT BASYS3 ARTIX-7)の制約ファイル
 
 ## Vivadoでプロジェクトを作成するときのSourcesについて
 - Design Sources

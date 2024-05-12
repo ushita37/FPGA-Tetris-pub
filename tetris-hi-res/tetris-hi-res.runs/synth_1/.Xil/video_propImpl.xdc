@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/ushit/GitHub-repo/FPGA-Tetris/video/basys3.xdc rfile:../../../../video/basys3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/ushit/iCloudDrive/Documents/tech/FPGA-Tetris-pub/video/basys3.xdc rfile:../../../../video/basys3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports CLK100M]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
