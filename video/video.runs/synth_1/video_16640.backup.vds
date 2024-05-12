@@ -1,0 +1,250 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Jan 23 10:50:23 2024
+# Process ID: 16640
+# Current directory: C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.runs/synth_1
+# Command line: vivado.exe -log video.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video.tcl
+# Log file: C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.runs/synth_1/video.vds
+# Journal file: C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.runs/synth_1\vivado.jou
+# Running On: LAPTOP-M3ON6P54, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16856 MB
+#-----------------------------------------------------------
+source video.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 448.723 ; gain = 164.348
+Command: read_checkpoint -auto_incremental -incremental C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.srcs/utils_1/imports/synth_1/video.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.srcs/utils_1/imports/synth_1/video.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top video -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16636
+WARNING: [Synth 8-6901] identifier 'Red' is used before its declaration [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.v:26]
+WARNING: [Synth 8-6901] identifier 'Green' is used before its declaration [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.v:27]
+WARNING: [Synth 8-6901] identifier 'Blue' is used before its declaration [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.v:28]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'clock2_25MHz' [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:33]
+INFO: [Synth 8-9937] previous definition of design element 'clock2_25MHz' is here [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/VGAtiming-do-well.v:93]
+INFO: [Synth 8-11241] undeclared symbol 'Btnu', assumed default net type 'wire' [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:88]
+INFO: [Synth 8-11241] undeclared symbol 'Btnl', assumed default net type 'wire' [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:88]
+INFO: [Synth 8-11241] undeclared symbol 'Btnr', assumed default net type 'wire' [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:88]
+INFO: [Synth 8-11241] undeclared symbol 'Btnd', assumed default net type 'wire' [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:88]
+INFO: [Synth 8-11241] undeclared symbol 'Btnc', assumed default net type 'wire' [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:88]
+WARNING: [Synth 8-10604] concatenation with an unsized literal will be treated as 32 bits [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:86]
+WARNING: [Synth 8-10604] concatenation with an unsized literal will be treated as 32 bits [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:86]
+WARNING: [Synth 8-10604] concatenation with an unsized literal will be treated as 32 bits [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:86]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1263.684 ; gain = 408.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'video' [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.v:3]
+INFO: [Synth 8-6157] synthesizing module 'VGAtiming' [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/VGAtiming-do-well.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'VGAtiming' (0#1) [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/VGAtiming-do-well.v:13]
+INFO: [Synth 8-6157] synthesizing module 'color' [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:39]
+INFO: [Synth 8-6157] synthesizing module 'chattering' [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'chattering' (0#1) [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'color' (0#1) [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'video' (0#1) [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.v:3]
+WARNING: [Synth 8-6014] Unused sequential element Btncb4_reg was removed.  [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/color-hi-res.v:133]
+WARNING: [Synth 8-7129] Port Hcount[3] in module color is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Hcount[2] in module color is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Hcount[1] in module color is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Hcount[0] in module color is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Vcount[3] in module color is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Vcount[2] in module color is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Vcount[1] in module color is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Vcount[0] in module color is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[4] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module video is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1722.609 ; gain = 867.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1722.609 ; gain = 867.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1722.609 ; gain = 867.746
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.486 . Memory (MB): peak = 1722.609 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/basys3.xdc]
+Finished Parsing XDC File [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Documents/GitHub/FPGA-Tetris/video/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/video_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/video_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1722.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1722.609 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1722.609 ; gain = 867.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1722.609 ; gain = 867.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1722.609 ; gain = 867.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1722.609 ; gain = 867.746
+---------------------------------------------------------------------------------
+video__GC0color__GB7color__GB6color__GB3color__GB2---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1722.609 ; gain = 867.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1722.609 ; gain = 867.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1722.609 ; gain = 867.746
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++------+----------------+------------+----------+----------+
+|      |Changed Modules |Replication |Instances |Changed % |
++------+----------------+------------+----------+----------+
+|1     |color           |           1|    176190|   42.4429|
++------+----------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 415122
+   Resynthesis Design Size (number of cells) : 336211
+   Resynth % : 80.9909,  Reuse % : 19.0091
+
+3. Reference Checkpoint Information
+
++----------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.srcs/utils_1/imports/synth_1/video.dcp |
++----------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2023.1 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |color__GB4         |           1|    239401|
+|2     |color__GB5         |           1|     36186|
+|3     |color__GB0         |           1|     28672|
+|4     |color__GB1         |           1|     31952|
+|5     |color__GB2_#REUSE# |           1|         0|
+|6     |color__GB3_#REUSE# |           1|         0|
+|7     |color__GB6_#REUSE# |           1|         0|
+|8     |color__GB7_#REUSE# |           1|         0|
+|9     |video__GC0_#REUSE# |           1|         0|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 38    
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	             2048 Bit    Registers := 2     
+	               27 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input 2048 Bit        Muxes := 44    
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   29 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 3     
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 81    
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 9     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 24    
+	   3 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------

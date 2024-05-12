@@ -1,0 +1,4 @@
+color__GB1
+color__GB0
+color__GB5
+color__GB4

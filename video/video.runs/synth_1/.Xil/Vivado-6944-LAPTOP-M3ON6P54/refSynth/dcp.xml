@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Checkpoint Version="20" Minor="0">
+	<BUILD_NUMBER Name="3865809"/>
+	<FULL_BUILD Name="SW Build 3865809 on Sun May  7 15:05:29 MDT 2023"/>
+	<PRODUCT Name="Vivado v2023.1 (64-bit)"/>
+	<Part Name="xc7a35tcpg236-1"/>
+	<Top Name="video"/>
+	<DisableAutoIOBuffers Name="0"/>
+	<OutOfContext Name="0"/>
+	<RunGenerated Name="1"/>
+	<HDPlatform Name="0"/>
+	<File Type="VERILOG_STUB" Name="video_stub.v" ModTime="1704772014"/>
+	<File Type="VHDL_STUB" Name="video_stub.vhdl" ModTime="1704772014"/>
+	<File Type="SHAPE" Name="video.shape" ModTime="1704772014"/>
+	<File Type="XN" Name="video.xn" ModTime="1704772014"/>
+	<File Type="EDIF" Name="video.edf" ModTime="1704772014"/>
+	<File Type="INCR" Name="video.incr" ModTime="1704772014"/>
+	<File Type="RDA" Name="video.rda" ModTime="1704772014"/>
+	<File Type="JSON_RDA" Name="video_rda.json" ModTime="1704772014"/>
+	<File Type="WDF" Name="video.wdf" ModTime="1704772014"/>
+	<File Type="SYNTH" Name="video.synth" ModTime="1704772014"/>
+</Checkpoint>
+

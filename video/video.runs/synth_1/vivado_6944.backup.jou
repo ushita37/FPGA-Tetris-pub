@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Jan 16 12:26:30 2024
+# Process ID: 6944
+# Current directory: C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.runs/synth_1
+# Command line: vivado.exe -log video.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video.tcl
+# Log file: C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.runs/synth_1/video.vds
+# Journal file: C:/Users/user/Documents/GitHub/FPGA-Tetris/video/video.runs/synth_1\vivado.jou
+# Running On: LAPTOP-M3ON6P54, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 16856 MB
+#-----------------------------------------------------------
+source video.tcl -notrace
