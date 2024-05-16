@@ -47,3 +47,9 @@ FPGAボードのボタンでブロックを動かし、テトリス風のゲー�
 - USB A - microBケーブル (mircoBをFPGAボードに挿す)
 - Vivado 2023.2
 - PC (Vivadoを動かすためのもの、Windows 11)
+
+![DIGILENT BASYS3 ARTIX-7](/assets/images/fpga.jpg)
+
+
+## 紹介動画
+ゲームの画面の動作イメージは[こちら](https://drive.google.com/file/d/1AaBwkMbuqvsR4GAyNL1H4vhcQYWOdarv/view?usp=sharing)
