@@ -54,5 +54,12 @@ FPGAボードのボタンでブロックを動かし、テトリス風のゲー�
 
 ブロックは1つのマス(ピクセル)を2つ縦に繋げた長方形になっている。このブロックが一番下まで落下すると、次のブロックが現れる。ブロックをボタン操作で動かして落とすことを繰り返し、1行全てがブロックで埋まると、その行が消去される。消去された行より上にあるブロックは、自動的に一つずつ下に移動する。
 
-## コーデの解説(出力される画面をどのようにセットしているか)
+##  コードの解説(出力される画面をどのようにセットしているか)
 `color-hi-res.v`では、実物のディスプレイにブロックを表示する方法を示している。
+
+まず、画面の解像度とブロックのサイズ、配置について説明する。
+![FPGA resolution](https://raw.githubusercontent.com/ushita37/FPGA-Tetris-pub/main/fpga-resolution.png)
+
+
+次に、ブロックのアドレス管理について説明する。
+![FPGA address](https://raw.githubusercontent.com/ushita37/FPGA-Tetris-pub/main/fpga-address.png)
