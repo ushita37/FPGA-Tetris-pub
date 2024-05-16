@@ -48,7 +48,7 @@ FPGAボードのボタンでブロックを動かし、テトリス風のゲー�
 - Vivado 2023.2
 - PC (Vivadoを動かすためのもの、Windows 11)
 
-![DIGILENT BASYS3 ARTIX-7](/images/fpga.jpg)
+![DIGILENT BASYS3 ARTIX-7](image/fpga.jpg)
 
 
 ## 紹介動画
